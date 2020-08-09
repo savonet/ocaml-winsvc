@@ -7,7 +7,7 @@ license: "GPL-2.0"
 homepage: "https://github.com/savonet/ocaml-winsvc"
 bug-reports: "https://github.com/savonet/ocaml-winsvc/issues"
 depends: [
-  "dune" {> "2.0"}
+  "dune" {> "1.0"}
 ]
 build: [
   ["dune" "subst"] {pinned}
@@ -27,8 +27,8 @@ build: [
 ]
 dev-repo: "git+https://github.com/savonet/ocaml-winsvc.git"
 url {
-  src: "https://github.com/savonet/ocaml-winsvc/archive/master.tar.gz"
+  src: "https://github.com/savonet/ocaml-winsvc/archive/dune-1.tar.gz"
   checksum: [
-    "md5=689380b74a77e392d92eb96cf33532d5"
+    "md5=fe6391b95395a8c92a0080e24b37e5d8"
   ]
 }
