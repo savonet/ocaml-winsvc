@@ -29,6 +29,6 @@ dev-repo: "git+https://github.com/savonet/ocaml-winsvc.git"
 url {
   src: "https://github.com/savonet/ocaml-winsvc/archive/dune-1.tar.gz"
   checksum: [
-    "md5=1697e01a028e8f862d2d665f797627d2"
+    "md5=319be6c059cb3cc9c8526d3234ee4b1d"
   ]
 }
