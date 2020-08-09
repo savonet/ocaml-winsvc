@@ -195,6 +195,9 @@ CAMLprim value caml_winsvc_run(value v_name, value v_run, value v_stop) {
   result = StartServiceCtrlDispatcher(dispatch_table);
   caml_acquire_runtime_system();
 
+  caml_remove_generational_global_root(&cb_service_run);
+  caml_remove_generational_global_root(&cb_service_stop);
+
   s_service_name = NULL;
 
   free(s_name);
