@@ -16,13 +16,14 @@ build: [
     "dune"
     "build"
     "-p"
-    name
+    "winsvc"
     "-j"
     jobs
+    "-x"
+    "windows"
     "@install"
     "@runtest" {with-test}
     "@doc" {with-doc}
   ]
 ]
 dev-repo: "git+https://github.com/savonet/ocaml-winsvc.git"
-available: [ os = "win32" ]
