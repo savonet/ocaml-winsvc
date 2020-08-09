@@ -1,6 +1,0 @@
-(library
- (name winsvc)
- (public_name winsvc)
- (libraries threads)
- (wrapped false)
- (c_names winsvc_stubs))
