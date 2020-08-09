@@ -197,6 +197,8 @@ CAMLprim value caml_winsvc_run(value v_name, value v_run, value v_stop) {
 
   caml_remove_generational_global_root(&cb_service_run);
   caml_remove_generational_global_root(&cb_service_stop);
+  cb_service_run = Val_unit;
+  cb_service_stop = Val_unit;
 
   s_service_name = NULL;
 

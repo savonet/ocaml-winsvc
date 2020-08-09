@@ -20,7 +20,7 @@ end
 
 module Make (S : Sig) = struct
   let args = List.map Filename.quote S.arguments
-  let executable = Printf.sprintf "%S" Sys.executable_name in
+  let executable = Printf.sprintf "%S" Sys.executable_name
   let path = String.concat " " (executable :: args)
   let install () = install S.name S.display S.text path
   let remove () = remove S.name
