@@ -32,6 +32,8 @@ module Make (S : Sig) : sig
 
   (** [run main]
     @param main function to run, stdin/stdout not available (will raise exception if used),
-                when [S.stop] is called this function should return as soon as possible *)
+                when [S.stop] is called this function should return as soon as possible.
+    @raise Failure if the program is being run as a console application rather than as a
+                   service. *)
   val run : (unit -> unit) -> unit
 end

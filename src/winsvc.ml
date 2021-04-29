@@ -1,14 +1,14 @@
 external install : string -> string -> string -> string -> unit
-  = "caml_winsvc_install"
+  = "winsvc_install"
 
-external remove : string -> unit = "caml_winsvc_remove"
+external remove : string -> unit = "winsvc_remove"
 
 external run : string -> (unit -> unit) -> (unit -> unit) -> unit
-  = "caml_winsvc_run"
+  = "winsvc_run"
 
 exception Error of string
 
-let () = Callback.register_exception "caml_winsvc_exn" (Error "register");
+let () = Callback.register_exception "winsvc_exn" (Error "register");
 
 module type Sig = sig
   val name : string
